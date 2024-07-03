@@ -33,6 +33,7 @@ public class bj18312_시각 {
 
     // 시간, 분, 초 단위로 나눠서 위에서 걸리는 경우 한번에 더하고 넘어가기.
     //00시 00분 00초 ~ N시 59분 59초까지 K가 포함되는 시간 수 카운트
+    // 삼중 포문에 i,j,k를 쓰기때문에 헷갈려서 안쓰도록 주의해야함!!
      static void count_clock_2(int N, String K){
         for(int i=0; i<=N; i++){
             if(i < 10) {
