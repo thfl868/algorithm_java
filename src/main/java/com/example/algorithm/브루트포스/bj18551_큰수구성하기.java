@@ -29,7 +29,6 @@ public class bj18551_큰수구성하기 {
     }
 
     //K개중에 N.length개 만큼 중복하여 숫자를 뽑아서 N보다 작은 가장 큰수 만들기.
-    //못만들면 N.length-1개만큼 뽑아서 가장 큰 수 만들기
     private static void getNums(int cnt, int num) {
         if (cnt == N_length) {
             return;
