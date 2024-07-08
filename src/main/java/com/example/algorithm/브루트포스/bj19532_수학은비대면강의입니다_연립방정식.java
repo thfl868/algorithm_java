@@ -3,6 +3,20 @@ package com.example.algorithm.브루트포스;
 import java.io.*;
 import java.util.StringTokenizer;
 public class bj19532_수학은비대면강의입니다_연립방정식 {
+    /**
+     * **1단계) 문제 분석**
+     * 문제 분석은 다음 내용을 포함해주세요.
+     *
+     * 1. 시간복잡도
+     * 2. 제약 조건 분석
+     *
+     * **2단계) 접근 방식**
+     * 1. 생각 과정 설명(왜 이 자료구조/알고리즘을 선택했고, 어떻게 해결방법을 생각하게 되었는지 생각이 도달하는 과정을 설명)
+     * 2. 고려한 예외 케이스 설명
+     *
+     * **3단계) 코드 설계**
+     * 개인별로 언어가 다를 수 있으므로 코드 자체를 설명하기보단 2단계에서 설명한 아이디어를 어떻게 구현했는지 설명
+     * */
      static int a,b,c,d,e,f;
      public static void main(String args[]) throws Exception{
          input();

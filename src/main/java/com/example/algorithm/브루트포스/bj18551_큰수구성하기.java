@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.StringTokenizer;
 public class bj18551_큰수구성하기 {
     //todo 1시간 안에 못품!! 다시 확인해보기
+
     static int N;
     static int N_length;
     static int K;
