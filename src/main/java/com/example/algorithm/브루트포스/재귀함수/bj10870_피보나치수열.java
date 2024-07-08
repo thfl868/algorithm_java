@@ -1,4 +1,4 @@
-package com.example.algorithm.재귀함수;
+package com.example.algorithm.브루트포스.재귀함수;
 
 import java.io.BufferedReader;
 import java.io.IOException;
