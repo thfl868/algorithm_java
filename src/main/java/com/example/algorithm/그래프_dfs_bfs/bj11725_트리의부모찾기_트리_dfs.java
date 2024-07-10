@@ -27,7 +27,6 @@ public class bj11725_트리의부모찾기_트리_dfs {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st ;
-        Scanner sc = new Scanner(System.in);
         sb = new StringBuilder();
         arr = new ArrayList[n+1];
         parent = new int[n+1]; //트리구조에서 노드 = 간선의개수 -1
