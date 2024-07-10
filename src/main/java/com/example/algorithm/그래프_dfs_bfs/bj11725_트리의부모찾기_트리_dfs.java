@@ -1,6 +1,7 @@
 package com.example.algorithm.그래프_dfs_bfs;
 
 import java.util.*;
+import java.io.*;
 public class bj11725_트리의부모찾기_트리_dfs {
     /**
      * 루트 없는 트리가 주어진다. 이때, 트리의 루트를 1이라고 정했을 때, 각 노드의 부모를 구하는 프로그램을 작성하시오.
@@ -9,35 +10,34 @@ public class bj11725_트리의부모찾기_트리_dfs {
      * 3. root부터 차례대로 문제 해결해보기(root는 1로 정해져있음)
      * 4. 탐색 알고리즘 bfs/ dfs (트리문제는 dfs로 구현)
      *
-     * 7
-     * 1 6
-     * 6 3
-     * 3 5
-     * 4 1
-     * 2 4
-     * 4 7
+     * 인접 행렬로 구현시 메모리 초과 발생
+     * Scanner로 입력 받을 시 1,484ms 초 / BufferedReader는 724ms
+     * 메모리는 203,260kb / 74,736kb
      * */
 
     static ArrayList<Integer>[] arr ;
     static int[] parent;
     static StringBuilder sb ;
-    public static void main(String args[]){
+    public static void main(String args[]) throws IOException {
         input();
         find();
     }
 
-    static void input(){
+    static void input() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        StringTokenizer st ;
         Scanner sc = new Scanner(System.in);
         sb = new StringBuilder();
-        int n = sc.nextInt();
         arr = new ArrayList[n+1];
         parent = new int[n+1]; //트리구조에서 노드 = 간선의개수 -1
         for(int i=1; i<=n; i++){
             arr[i] = new ArrayList<>(); //인접 리스트배열 초기화
         }
         for(int i=1; i<+n; i++){
-            int x = sc.nextInt();
-            int y = sc.nextInt();
+            st = new StringTokenizer(br.readLine());
+            int x = Integer.parseInt(st.nextToken());
+            int y = Integer.parseInt(st.nextToken());
             arr[x].add(y); //방향성 없으므로 양쪽 다 넣기
             arr[y].add(x);
         }
