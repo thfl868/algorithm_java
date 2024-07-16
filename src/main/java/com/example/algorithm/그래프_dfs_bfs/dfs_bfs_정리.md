@@ -1,29 +1,21 @@
 # 인접행렬 선언
+'''
 Scanner sc = new Scanner(System.in);
-
 int n = sc.nextInt();
-
 int v = sc.nextInt();
-
 int[][] adj = new int[n+1][n+1]; //인접행렬
-
 visited = new boolean[n+1]; //방문배열
-
 int x,y;
-
 for(int i=1; i<=v;i++){
-
     int x = sc.nextInt();
-
     int y = sc.nextInt();
-
     adj[x][y] = 1; //양방향 그래프
-
     adj[y][x] = 1;
 }
-
+'''
 
 # 인접리스트 선언
+'''
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st ;
@@ -40,6 +32,7 @@ BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             arr[x].add(y); //방향성 없으므로 양쪽 다 넣기
             arr[y].add(x);
         }
+'''
 
 # DFS(Depth First Search) : 깊이 우선 탐색
 1. 시작점에서 아직 방문하지 않은 노드를 찾는다.
