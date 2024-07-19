@@ -12,7 +12,7 @@ public class bj1991_트리순회 {
      * 트리 만드는 법 !!
      * 먼저 root 노드를 만들고 삽입.
      * */
-    //todo 트리 만드는법, 전위, 중위, 후위 순회 하는 방법 다시 보기
+    //todo 트리 만드는법, 전위, 중위, 후위 순회 하는 방법 다시 보회
     public static void main (String[] args) throws IOException{
         input();
         preorder(head);
