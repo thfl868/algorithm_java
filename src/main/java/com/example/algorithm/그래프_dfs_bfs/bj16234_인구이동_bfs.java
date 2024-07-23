@@ -3,7 +3,7 @@ package com.example.algorithm.그래프_dfs_bfs;
 import java.util.*;
 import java.io.*;
 public class bj16234_인구이동_bfs {
-    //todo 꼭 다시 풀어보기, 어려움
+    //todo 꼭 다시 풀어보기, 어려움 (골드 4 문제)
     /**
      * visit 배열 초기화 위치 중요!!
      * 하루에 두 연합 이상이 생성될 수 있음
