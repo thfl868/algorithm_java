@@ -1,4 +1,4 @@
-package com.example.algorithm.다익스트라;
+package com.example.algorithm.힙;
 import java.io.*;
 import java.util.*;
 
