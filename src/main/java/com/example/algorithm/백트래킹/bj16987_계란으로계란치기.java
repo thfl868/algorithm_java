@@ -1,4 +1,4 @@
-package com.example.algorithm.구현;
+package com.example.algorithm.백트래킹;
 import java.io.*;
 import java.util.*;
 public class bj16987_계란으로계란치기 {
